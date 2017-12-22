@@ -2,9 +2,11 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { withStyles } from 'material-ui/styles';
 import BottomNavigation, { BottomNavigationButton } from 'material-ui/BottomNavigation';
-import RestoreIcon from 'material-ui-icons/Restore';
-import FavoriteIcon from 'material-ui-icons/Favorite';
-import LocationOnIcon from 'material-ui-icons/LocationOn';
+import HomeIcon from 'material-ui-icons/Home';
+import InfoIcon from 'material-ui-icons/Info';
+import HistoryIcon from 'material-ui-icons/History';
+import ExperienceIcon from 'material-ui-icons/NextWeek';
+import SchoolIcon from 'material-ui-icons/School';
 
 const styles = {
   root: {
@@ -32,9 +34,10 @@ class MyAwesomeReactComponent extends React.Component {
         showLabels
         className={classes.root}
         >
-        <BottomNavigationButton label="Recents" icon={<RestoreIcon />} />
-        <BottomNavigationButton label="Favorites" icon={<FavoriteIcon />} />
-        <BottomNavigationButton label="Nearby" icon={<LocationOnIcon />} />
+        <BottomNavigationButton label="Home" icon={<HomeIcon />} />
+        <BottomNavigationButton label="Summary" icon={<InfoIcon />} />
+        <BottomNavigationButton label="Experience" icon={<ExperienceIcon />} />
+        <BottomNavigationButton label="Education" icon={<SchoolIcon />} />
       </BottomNavigation>
     );
   }
