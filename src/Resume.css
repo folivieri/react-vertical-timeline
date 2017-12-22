@@ -37,3 +37,8 @@
 .resumeSummary * li{
   margin: 40px 0;
 }
+
+#toolbar {
+  position: fixed;
+  bottom: 0;
+}
