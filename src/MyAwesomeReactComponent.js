@@ -21,6 +21,9 @@ class MyAwesomeReactComponent extends React.Component {
 
   handleChange = (event, value) => {
     this.setState({ value });
+    var loc = document.location.toString().split('#')[0];
+    document.location = loc + '#' + value;
+    return false;
   };
 
   render() {
@@ -34,10 +37,10 @@ class MyAwesomeReactComponent extends React.Component {
         showLabels
         className={classes.root}
         >
-        <BottomNavigationButton label="Home" icon={<HomeIcon />} />
-        <BottomNavigationButton label="Summary" icon={<InfoIcon />} />
-        <BottomNavigationButton label="Experience" icon={<ExperienceIcon />} />
-        <BottomNavigationButton label="Education" icon={<SchoolIcon />} />
+        <BottomNavigationButton label="Home" value="header" icon={<HomeIcon />} />
+        <BottomNavigationButton label="Summary" value="summary" icon={<InfoIcon />} />
+        <BottomNavigationButton label="Experience" value="timeline" icon={<ExperienceIcon />} />
+        <BottomNavigationButton label="Education" value="education" icon={<SchoolIcon />} />
       </BottomNavigation>
     );
   }

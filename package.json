@@ -102,6 +102,7 @@
   "dependencies": {
     "material-ui": "^1.0.0-beta.24",
     "material-ui-icons": "^1.0.0-beta.17",
+    "react": "^16.0.0",
     "react-native-material-bottom-navigation": "^0.7.0",
     "react-native-vector-icons": "^4.0.1",
     "react-visibility-sensor": "^3.11.0"

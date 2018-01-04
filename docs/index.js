@@ -7,6 +7,7 @@ import SchoolIcon from 'material-ui-icons/School';
 import WorkIcon from 'material-ui-icons/Work';
 import 'purecss/build/pure.css';
 
+
 import { VerticalTimeline, VerticalTimelineElement } from '../src/index';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import MyAwesomeReactComponent from '../src/MyAwesomeReactComponent';
@@ -19,6 +20,7 @@ const documentationImports = {};
 
 const header = (
   <div className='resumeIntro'>
+    <a name='#home'></a>
     <div id="Resume-home" className="ResumeHomeBlock ScreenBlock">
       <div className="ResumeHomeBlock-headline-container">
         <div className="ResumeHomeBlock-headline"><h1><span>Frederic Olivieri</span></h1>
@@ -28,20 +30,46 @@ const header = (
   </div>
 )
 
+const swSummary = (
+  <div class="star-wars-intro">
+
+    <p class="intro-text">
+      A Brief History of Fred...
+    </p>
+
+    <h2 class="main-logo">
+      <img src="img/star-wars-intro.png"/>
+    </h2>
+
+    <div class="main-content">
+        <div class="title-content">
+          <p class="content-header">SUMMARY OF EXPERIENCE<br/>A New Hope for ClearCapital</p>
+          <br/>
+            <p>He is a Senior software engineer with over 20 years of hands-on experience and expertise in application software design and development and involvement in all phases of Software Development Lifecycle (SDLC).</p>
+            <p>Responsible for having architected and developed multiple highly successful Java EE based commercial software applications fully internationalized, using the following JEE technologies: Session and Entity EJBs, CMP 2.0, Message Driven Beans, JMS, JDBC, JSP, JSF, Hibernate, Spring, JSTL, Servlets, Struts MVC framework.</p>
+            <p>He has extensive experience with agile software development techniques, such as Extreme Programming (XP) and Scrum methodologies (certified scrum master), as well as Rational Unified Process using UML ,Class-responsibility-collaboration (CRC) cards.</p>
+            <p>Further, he has expert level front end skills in HTML/DHTML/XHTML, JavaScript, Cascading Style Sheets (CSS), JSP, Servlets, XSL, JSON, Java Server Faces (JSF) including Oracle ADF Faces and Apache MyFaces, Grails, Ajax Component frameworks such as Node.js, Dojo, YUI, Angular JS, Facebook’s React, and Sencha Command/ExtJS.</p>
+            <p>Fred has exceptional leadership and management skills, experienced in leading local, remote, and offshore teams and is an experienced instructor for University of California, Irvine extension courses related to J2EE development: JSP, JDBC, UML, Intro to J2EE, Enterprise Java Beans. Also, he has conducted numerous corporate training courses on product usage.</p>
+
+        </div>
+    </div>
+  </div>
+)
+
 const summary = (
   <div className='resumeSummary'>
     <div id="Resume-summary" className="ResumeHomeBlock ScreenBlock">
         <h3>SUMMARY OF EXPERIENCE</h3>
-        <ul>
-          <li>Senior software engineer with over 20 years of hands-on experience and expertise in application software design and development and involvement in all phases of Software Development Lifecycle (SDLC).</li>
-          <li>Responsible for having architected and developed multiple highly successful Java EE based commercial software applications fully internationalized, using the following JEE technologies: Session and Entity EJBs, CMP 2.0, Message Driven Beans, JMS, JDBC, JSP, JSF, Hibernate, Spring, JSTL, Servlets, Struts MVC framework.</li>
-          <li>Extensive experience with agile software development techniques, such as Extreme Programming (XP) and Scrum methodologies (certified scrum master), as well as Rational Unified Process using UML ,Class-responsibility-collaboration (CRC) cards.</li>
-          <li>Expert level front end skills in HTML/DHTML/XHTML, JavaScript, Cascading Style Sheets (CSS), JSP, Servlets, XSL, JSON, Java Server Faces (JSF) including Oracle ADF Faces and Apache MyFaces, Grails, Ajax Component frameworks such as Node.js, Dojo, YUI, Angular JS, Facebook’s React, and Sencha Command/ExtJS.</li>
-          <li>Exceptional leadership and management skills, experienced in leading local, remote, and offshore teams.</li>
-          <li>Experienced instructor for University of California, Irvine extension courses related to J2EE development: JSP, JDBC, UML, Intro to J2EE, Enterprise Java Beans. Also, conducted numerous corporate training courses on product usage</li>
-        </ul>
+          <ul>
+            <li>Senior software engineer with over 20 years of hands-on experience and expertise in application software design and development and involvement in all phases of Software Development Lifecycle (SDLC).</li>
+            <li>Responsible for having architected and developed multiple highly successful Java EE based commercial software applications fully internationalized, using the following JEE technologies: Session and Entity EJBs, CMP 2.0, Message Driven Beans, JMS, JDBC, JSP, JSF, Hibernate, Spring, JSTL, Servlets, Struts MVC framework.</li>
+            <li>Extensive experience with agile software development techniques, such as Extreme Programming (XP) and Scrum methodologies (certified scrum master), as well as Rational Unified Process using UML ,Class-responsibility-collaboration (CRC) cards.</li>
+            <li>Expert level front end skills in HTML/DHTML/XHTML, JavaScript, Cascading Style Sheets (CSS), JSP, Servlets, XSL, JSON, Java Server Faces (JSF) including Oracle ADF Faces and Apache MyFaces, Grails, Ajax Component frameworks such as Node.js, Dojo, YUI, Angular JS, Facebook’s React, and Sencha Command/ExtJS.</li>
+            <li>Exceptional leadership and management skills, experienced in leading local, remote, and offshore teams.</li>
+            <li>Experienced instructor for University of California, Irvine extension courses related to J2EE development: JSP, JDBC, UML, Intro to J2EE, Enterprise Java Beans. Also, conducted numerous corporate training courses on product usage</li>
+          </ul>
+        </div>
       </div>
-    </div>
 )
 
 const content=  (
@@ -52,6 +80,7 @@ const content=  (
       iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
       icon={<WorkIcon />}
       >
+      <a name='#experience'></a>
       <h3 className="vertical-timeline-element-title">Senior Software Engineer</h3>
       <h4 className="vertical-timeline-element-subtitle">TriNet HR Corporation, Reno NV</h4>
       <ul>
@@ -123,7 +152,7 @@ const content=  (
     </VerticalTimelineElement>
     <VerticalTimelineElement
       className="vertical-timeline-element--work"
-      date="2006 - 2008"
+      date="October 2008 - December 2008"
       iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
       icon={<WorkIcon />}
       >
@@ -192,6 +221,7 @@ const content=  (
       iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
       icon={<WorkIcon />}
       >
+      <a name='#education'></a>
       <h3 className="vertical-timeline-element-title">Instructor and Corporate Extension Instructor</h3>
       <h4 className="vertical-timeline-element-subtitle">University of California, Irvine, CA</h4>
       <ul>
@@ -253,6 +283,10 @@ const content=  (
           <li> Occasional production of corporate presentations using Director, Photoshop, and PowerPoint</li>
       </ul>
     </VerticalTimelineElement>
+  </VerticalTimeline>
+);
+const education=  (
+  <VerticalTimeline>
     <VerticalTimelineElement
       className="vertical-timeline-element--education"
       date="November 1998"
@@ -271,7 +305,7 @@ const content=  (
       iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
       icon={<SchoolIcon />}
       >
-      <h3 className="vertical-timeline-element-title">Bachelor of Arts, Criminal Justice/Pre-Law emphasis</h3>
+      <h3 className="vertical-timeline-element-title">Bachelor of Arts, Criminal Justice- Pre-Law Emphasis</h3>
       <h4 className="vertical-timeline-element-subtitle">California State University, Fullerton</h4>
       <p>
         Dean's List 1993
@@ -302,22 +336,31 @@ backgroundImage: "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/
   document.getElementById('header')
 );
 
+
 // Catalog - logoSrc="../images/logo.png"
 ReactDOM.render(
   <div style={{backgroundColor: '#0B0B3B'}}>
-    {summary}
+    <a name='#summary'/>
+    {swSummary}
   </div>,
   document.getElementById('summary')
 );
 
 // Catalog - logoSrc="../images/logo.png"
 ReactDOM.render(
-  <div style={{backgroundColor: '#0B0B3B'}}>
+  <div class='expBack'>
     {content}
   </div>,
   document.getElementById('timeline')
 );
 
+// Catalog - logoSrc="../images/logo.png"
+ReactDOM.render(
+  <div class='eduBack'>
+    {education}
+  </div>,
+  document.getElementById('education')
+);
 
 
 ReactDOM.render(
