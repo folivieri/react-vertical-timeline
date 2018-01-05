@@ -254,3 +254,12 @@ p#start
 #timeline, #education {
   color: #000000;
 }
+
+#header {
+  color: #ffffff;
+  background-image: url("img/rebel-bg.jpg");
+  background-repeat: repeat;
+  background-size: 200px;
+  opacity:0.4
+}
+
